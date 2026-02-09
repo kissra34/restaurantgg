@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مأكولات فاس | Fes Food Express</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        body { font-family: 'Tajawal', sans-serif; background-color: #0f172a; color: white; overflow-x: hidden; }
+        .splash-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(135deg, #be123c 0%, #881337 100%);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            z-index: 100; transition: opacity 0.8s ease, visibility 0.8s;
+        }
+        .hidden-splash { opacity: 0; visibility: hidden; }
+        .hero-gradient { background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&q=80&w=1000'); background-size: cover; }
+    </style>
+</head>
+<body>
+
+    <div id="splash" class="splash-screen">
+        <div class="animate__animated animate__zoomIn text-center">
+            <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl">
+                <span class="text-4xl">🍲</span>
+            </div>
+            <h1 class="text-4xl font-bold text-white mb-2 tracking-tight">Welcome to MakudatFes</h1>
+            <p class="text-rose-100 text-lg opacity-80 animate__animated animate__fadeInUp animate__delay-1s">أصيل، شهي، ومن قلب فاس</p>
+            <div class="flex space-x-2 mt-8 justify-center flex-row-reverse">
+                <div class="w-3 h-3 bg-white rounded-full animate__animated animate__bounce animate__infinite"></div>
+                <div class="w-3 h-3 bg-white rounded-full animate__animated animate__bounce animate__infinite animate__delay-1s"></div>
+                <div class="w-3 h-3 bg-white rounded-full animate__animated animate__bounce animate__infinite animate__delay-2s"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <nav class="p-6 flex justify-between items-center bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+            <div class="text-2xl font-bold text-rose-500">مأكولات فاس</div>
+            <div class="flex space-x-6 space-x-reverse">
+                <a href="#" class="hover:text-rose-400">الرئيسية</a>
+                <a href="#" class="hover:text-rose-400">المنيو</a>
+                <a href="#" class="hover:text-rose-400">عنّا</a>
+            </div>
+        </nav>
+
+        <header class="hero-gradient h-[500px] flex items-center justify-center text-center px-4">
+            <div class="animate__animated animate__fadeIn">
+                <h2 class="text-5xl font-extrabold mb-6">تذوق سحر المطبخ الفاسي</h2>
+                <button class="bg-rose-600 hover:bg-rose-700 text-white px-10 py-4 rounded-full text-xl font-bold transition-all transform hover:scale-105 shadow-lg">
+                    اطلب الآن
+                </button>
+            </div>
+        </header>
+
+        <section class="py-20 max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-12 text-center border-b-2 border-rose-600 w-fit mx-auto pb-2">أطباقنا المميزة</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-slate-800 rounded-3xl overflow-hidden shadow-2xl hover:shadow-rose-900/20 transition-all border border-slate-700 group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500')"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">طجين فاسي أصيل</h4>
+                        <p class="text-slate-400 mb-4">لحم طري مع البرقوق واللوز المحمص.</p>
+                        <span class="text-2xl font-bold text-rose-500">85 DH</span>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-3xl overflow-hidden shadow-2xl border border-slate-700 group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?w=500')"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">بسطيلة بالدجاج</h4>
+                        <p class="text-slate-400 mb-4">الخلطة السحرية بين الملوحة والحلاوة.</p>
+                        <span class="text-2xl font-bold text-rose-500">120 DH</span>
+                    </div>
+                </div>
+                <div class="bg-slate-800 rounded-3xl overflow-hidden shadow-2xl border border-slate-700 group">
+                    <div class="h-56 bg-cover bg-center group-hover:scale-110 transition-transform duration-500" style="background-image: url('https://images.unsplash.com/photo-1541529086526-db283c563270?w=500')"></div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">كسكس ملكي</h4>
+                        <p class="text-slate-400 mb-4">بسبع خضار ولحم بلدي فاخر.</p>
+                        <span class="text-2xl font-bold text-rose-500">95 DH</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // إخفاء الواجهة الحمراء بعد 4 ثوانٍ (مثل الموقع الأصلي)
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('splash').classList.add('hidden-splash');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
